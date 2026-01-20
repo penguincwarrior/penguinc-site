@@ -1,0 +1,16 @@
+# secrets
+/deploy_key
+/deploy_key.pub
+
+# Hugo build output
+/public/
+/resources/
+
+# local scratch
+/_resume_unpacked/
+/_resume_dump.*
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db

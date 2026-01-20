@@ -1,0 +1,10 @@
+baseURL = "http://penguinc.site/"
+languageCode = "zh-cn"
+title = "Penguinc"
+
+disableKinds = ["taxonomy", "term"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

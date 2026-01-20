@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <header class="list-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  </header>
+  <div class="list">
+    {{ range .Pages }}
+      <a class="card" href="{{ .RelPermalink }}">
+        <div class="card-title">{{ .Title }}</div>
+        {{ with .Params.summary }}<div class="card-summary">{{ . }}</div>{{ end }}
+        {{ with .Date }}<div class="card-meta">{{ .Format "2006-01-02" }}</div>{{ end }}
+      </a>
+    {{ end }}
+  </div>
+{{ end }}
